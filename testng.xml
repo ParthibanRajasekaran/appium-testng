@@ -1,6 +1,7 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Complete Suite" thread-count="2" verbose="2" parallel="methods" >
+<!--<suite name="Complete Suite" thread-count="2" verbose="2" parallel="methods" >-->
+<suite name="Complete Suite" >
 
   <test name="Parallel tests" >
 
