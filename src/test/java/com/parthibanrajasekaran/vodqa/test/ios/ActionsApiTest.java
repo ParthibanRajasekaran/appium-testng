@@ -1,10 +1,11 @@
-package com.parthibanrajasekaran.test.ios;
+package com.parthibanrajasekaran.vodqa.test.ios;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
@@ -26,7 +27,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 // Tests for VodQA App using Actions API
-public class VodQATest {
+public class ActionsApiTest {
     public AppiumDriver driver;
     WebDriverWait wait;
 
@@ -48,7 +49,7 @@ public class VodQATest {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
         capabilities.setCapability(MobileCapabilityType.UDID, "A4EA7479-D8B0-406C-97F5-AA4624B08BA5");
         capabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "/vodqa.zip");
-        driver = new AndroidDriver(service.getUrl(), capabilities);
+        driver = new IOSDriver(service.getUrl(), capabilities);
     }
 
     @Test
