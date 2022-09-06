@@ -5,3 +5,7 @@ allure-report/*
 test-output/*
 target/*
 /target/
+
+android-logs.txt
+iOS-logs.txt
+log.txt
